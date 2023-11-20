@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   // css: ['~/assets/styles/main.css'], // global styles
 
-  modules: ['@nuxtjs/eslint-module', 'nuxt-purgecss', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/eslint-module', 'nuxt-purgecss', '@nuxtjs/tailwindcss', 'nuxt-vitest'],
 
   purgecss: {
     enabled: false, // Always enable purgecss
