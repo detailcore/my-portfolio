@@ -8,9 +8,24 @@ export default defineNuxtConfig({
     enabled: false,
   },
 
-  // css: ['~/assets/styles/base.css'], // global styles
+  css: ['~/assets/styles/base.scss'], // global styles
 
-  modules: ['@nuxtjs/eslint-module', 'nuxt-purgecss', '@nuxtjs/tailwindcss', 'nuxt-vitest', '@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+    'nuxt-vitest',
+    '@nuxt/image',
+    'nuxt-purgecss',
+    '@nuxtjs/google-fonts',
+    '@vueuse/nuxt',
+  ],
+
+  // https://image.nuxt.com/get-started/configuration
+  image: {
+    quality: 75,
+    format: ['webp'],
+    dir: 'assets/images',
+  },
 
   purgecss: {
     enabled: false, // Always enable purgecss
