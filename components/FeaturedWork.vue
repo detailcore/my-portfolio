@@ -1,3 +1,14 @@
+<script setup>
+const { work } = defineProps({
+  work: {
+    type: Object,
+    required: true,
+  },
+})
+
+const year = computed(() => new Date(work.date).getFullYear())
+</script>
+
 <template>
   <div class="flex flex-col sm:flex-row">
     <NuxtPicture
@@ -10,17 +21,18 @@
       <NuxtLink
         active-class="text-primary"
         class="text-3xl font-bold transition hover:text-primary active:text-primary"
-        to="/post"
+        :to="`/works/${work.id}`"
       >
-        Designing Dashboards
+        {{ work.title }}
       </NuxtLink>
       <div class="mb-6 mt-4 flex flex-row items-center sm:mb-0 sm:mt-0">
-        <div class="mr-6 rounded-2xl bg-[#142850] px-2 text-lg font-black text-gray-50">2020</div>
-        <div class="text-xl text-light">Dashboard</div>
+        <div class="mr-6 rounded-2xl bg-[#142850] px-2 text-lg font-black text-gray-50">
+          {{ year }}
+        </div>
+        <div class="text-xl text-light">{{ work.subtitle }}</div>
       </div>
       <div class="whitespace-break-spaces">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        {{ work.short_description }}
       </div>
     </div>
   </div>

@@ -1,19 +1,33 @@
+<script setup>
+import { posts } from '@/mock/index'
+
+const latest = computed(() => {
+  return posts.slice(0, 2)
+})
+</script>
+
 <template>
   <div class="custom-line min-h-[396px]">
     <div class="flex items-center justify-center py-6 text-2xl sm:justify-between">
-      <div>Recent posts</div>
-      <NuxtLink to="#view_all" class="hidden text-base text-secondry sm:block">View all</NuxtLink>
+      <div>Недавние публикации</div>
+      <NuxtLink to="/posts" class="hidden text-base text-secondry sm:block">
+        Смотреть все
+      </NuxtLink>
     </div>
 
-    <div class="mb-10 flex flex-col sm:flex-row">
-      <div v-for="item of [1, 2]" :key="item" class="last:mt-5 sm:last:ml-5 sm:last:mt-0">
-        <RecentPost />
+    <div class="flex flex-col sm:flex-row">
+      <div
+        v-for="item of latest"
+        :key="item.id"
+        class="last:mt-0 sm:w-[50%] sm:last:ml-5 sm:last:mt-0"
+      >
+        <RecentPost :post="item" />
       </div>
     </div>
   </div>
 </template>
 
-<style lang="css">
+<style lang="scss">
 .custom-line {
   position: relative;
 }

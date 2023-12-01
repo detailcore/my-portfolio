@@ -18,7 +18,16 @@
       </NuxtLink>
     </div>
 
-    <div>Copyright ©{{ year }} All rights reserved</div>
+    <div>Copyright ©{{ year }} All rights reserved.</div>
+    <div class="mt-2 flex text-sm">
+      Figma template (<NuxtLink
+        target="_blank"
+        to="https://www.figma.com/file/SLHsCYqjbiMLZ18sYcuM3B"
+        class="hover:text-primary focus:text-primary"
+      >
+        link </NuxtLink
+      >)
+    </div>
   </footer>
 </template>
 
