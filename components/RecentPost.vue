@@ -20,7 +20,7 @@ defineProps({
     <div class="my-6 flex text-lg">
       <div>{{ useDateFormat(post.date) }}</div>
       <div class="px-3">|</div>
-      <div class="flex">
+      <div class="flex flex-wrap">
         <span v-for="(tag, idx) of post.tags" :key="idx" class="mr-2 capitalize">
           {{ tag }}
         </span>

@@ -13,7 +13,7 @@ const year = computed(() => new Date(work.date).getFullYear())
   <div class="flex flex-col sm:flex-row">
     <NuxtPicture
       class="flex sm:shrink-0"
-      src="/work_1.png"
+      :src="`/works/${work.images.folder}/${work.cover}`"
       :img-attrs="{ class: 'w-full rounded-md sm:mr-5 sm:h-[180px] sm:w-[246px]' }"
       loading="lazy"
     />
@@ -23,7 +23,7 @@ const year = computed(() => new Date(work.date).getFullYear())
         class="text-3xl font-bold transition hover:text-primary active:text-primary"
         :to="`/works/${work.id}`"
       >
-        {{ work.title }}
+        #{{ work.id }}. {{ work.title }} <span v-if="work.links[0] === ''">(private)</span>
       </NuxtLink>
       <div class="mb-6 mt-4 flex flex-row items-center sm:mb-0 sm:mt-0">
         <div class="mr-6 rounded-2xl bg-[#142850] px-2 text-lg font-black text-gray-50">

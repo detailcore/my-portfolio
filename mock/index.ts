@@ -101,15 +101,30 @@ const data = {
   works: [
     {
       id: 1,
-      date: '2023-11-20',
-      cover: 'work_1.png',
-      images: ['work_1.png', 'work_2.png', 'work_3.png'],
-      title: '1 Designing Dashboards',
-      subtitle: 'Dashboard',
+      date: '2016-02-10',
+      cover: 'cover.png',
+      images: {
+        folder: 'mangaclub',
+        files: ['cover.png'],
+      },
+      title: 'Comics online reader',
+      subtitle: 'Website, legacy',
+      links: ['', 'https://mangaclub.ru/'],
+      stack: {
+        backend: ['DLE (CMS)', 'PHP', 'MySQL'],
+        frontend: ['JQuery', 'SASS', 'Gulp', 'JS'],
+        other: [],
+      },
+      competencies: ['Ручное тестирование', 'Вёрстка', 'Администрирование'],
+      competencies_description: `
+          -- вёрстка всех страниц
+          -- ручное тестирование в разных браузерах (Firefox, Chromium, IE)
+          -- написание ТЗ для другого фрилансера
+          -- ведение проекта (администрирование)
+          -- СЕО оптимизация (для поисковиков)`,
       short_description:
-        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis excepturi officiis culpa illo natus ullam ipsa. Facere rem quasi beatae odit, ullam reiciendis adipisci, molestias iure, sed temporibus obcaecati voluptas?',
+        'Это мой первый серьёзный проект и еще одим фрилансером, a так же проект с которого начался мой путь в веб-разработке. Фронтент часть переделывалась множество раз, но на текущий момент показать могу только финальный результат.',
+      description: ``,
     },
     {
       id: 2,
