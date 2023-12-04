@@ -4,7 +4,7 @@ export const navLinks = reactive([
   { name: 'Главная', link: '/' },
   { name: 'Работы', link: '/works' },
   { name: 'Блог', link: '/posts' },
-  { name: 'Контанкты', link: '/contact' },
+  // { name: 'Контанкты', link: '/contact' },
 ])
 
 const data = {
@@ -113,7 +113,7 @@ const data = {
       stack: {
         backend: ['DLE (CMS)', 'PHP', 'MySQL'],
         frontend: ['JQuery', 'SASS', 'Gulp', 'JS'],
-        other: [],
+        add: [],
       },
       competencies: ['Ручное тестирование', 'Вёрстка', 'Администрирование'],
       competencies_description: `
@@ -124,43 +124,214 @@ const data = {
           -- СЕО оптимизация (для поисковиков)`,
       short_description:
         'Это мой первый серьёзный проект и еще одим фрилансером, a так же проект с которого начался мой путь в веб-разработке. Фронтент часть переделывалась множество раз, но на текущий момент показать могу только финальный результат.',
-      description: ``,
     },
     {
       id: 2,
-      date: '2023-11-22',
-      cover: 'work_1.png',
-      images: ['work_1.png', 'work_2.png', 'work_3.png'],
-      title: '2 Designing Dashboards',
-      subtitle: 'Dashboard',
+      date: '2021-05-15',
+      cover: 'cover.png',
+      images: {
+        folder: 'parsepost.mangaclub.ru',
+        files: ['cover.png'],
+      },
+      title: 'Publication parser & Download content',
+      subtitle: 'SPA',
+      links: [
+        'https://github.com/detailcore/i141.parser.mangaclub.ru',
+        'https://parsepost.mangaclub.ru/',
+      ],
+      stack: {
+        backend: ['Laravel 8', 'Node.js', 'MySQL'],
+        frontend: ['Vue 2', 'Vue Router', 'Vuetify', 'Axios', 'JavaScript', 'Sass'],
+        add: [
+          'Playwright',
+          'Knex',
+          'Sharp',
+          'Moment',
+          'intervention/image',
+          'imangazaliev/didom',
+          'webpack',
+        ],
+      },
+      competencies: ['Разработка', 'Тестирование', 'Интеграция с существующим проектом'],
+      competencies_description: `
+          -- разработка с нуля бекенда и фронтенда
+          -- проектирование базы данных
+          -- создание очередей для запуска безголового браузера Playwright
+          -- интеграция с существующим проектом
+          -- мониторинг состояния очередей
+          -- парсинг публикаций с незащищенных страниц посредством didom (php)
+          -- парсинг контента с уже защищенных страниц с использованием Playwright (node.js)
+          -- сохранение контента в файловой системе и БД
+          -- вёрстка и использование библиотеки компонентов Vuetify`,
       short_description:
-        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis excepturi officiis culpa illo natus ullam ipsa. Facere rem quasi beatae odit, ullam reiciendis adipisci, molestias iure, sed temporibus obcaecati voluptas?',
+        'Автоматизация, а если точнее то, требовалось переложить ручную рутинную работу с человека и уменьшить затраты человекочасов на повторение одних и тех же действий, с чем в полной мере справился используя современные средства разработки.',
     },
     {
       id: 3,
-      date: '2023-11-27',
-      cover: 'work_1.png',
-      images: ['work_1.png', 'work_2.png', 'work_3.png'],
-      title: '3 Designing Dashboards',
-      subtitle: 'Dashboard',
+      date: '2023-03-14',
+      cover: 'cover.png',
+      images: {
+        folder: 'chat',
+        files: ['cover.png'],
+      },
+      title: 'Chat (Vue 3) for legacy website',
+      subtitle: 'SPA in legacy',
+      links: ['', ''],
+      stack: {
+        backend: ['Node.js', 'PM2', 'MySQL'],
+        frontend: ['Vue 3', 'Pinia'],
+        add: ['Vite', 'cors', 'jsonwebtoken', 'mysql2', 'fetch'],
+      },
+      competencies: ['Разработка чата на базе legacy проекта'],
+      competencies_description: `
+          -- интеграция с существующим проектом
+          -- проектирование БД
+          -- упрощенный бекенд на node.js 
+          -- небольшая интеграция node.js с php
+          -- Vue Composition API
+          -- вёрстка`,
       short_description:
-        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis excepturi officiis culpa illo natus ullam ipsa. Facere rem quasi beatae odit, ullam reiciendis adipisci, molestias iure, sed temporibus obcaecati voluptas?',
+        'Было необходимо написать чат для общения между авторизованными пользователями и интегрировать его в текущий проект.',
     },
     {
       id: 4,
-      date: '2023-11-25',
-      cover: 'work_1.png',
-      images: ['work_1.png', 'work_2.png', 'work_3.png'],
-      title: '4 Designing Dashboards',
-      subtitle: 'Dashboard',
-      short_description:
-        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis excepturi officiis culpa illo natus ullam ipsa. Facere rem quasi beatae odit, ullam reiciendis adipisci, molestias iure, sed temporibus obcaecati voluptas?',
+      date: '2019-10-27',
+      cover: 'cover1.png',
+      images: {
+        folder: 'verstka',
+        files: ['cover1.png'],
+      },
+      title: 'Учебная вёрстка первого экрана',
+      subtitle: 'Вёрстка учебная',
+      links: ['', ''],
+      stack: {
+        backend: [],
+        frontend: ['html', 'css'],
+        add: [],
+      },
+      competencies: ['верстка'],
+      competencies_description: `Верстка первого экрана под ПК`,
+      short_description: 'Обычная верстка первого экрана для ПК по макету из фотошопа',
+    },
+    {
+      id: 5,
+      date: '2019-12-26',
+      cover: 'cover2.png',
+      images: {
+        folder: 'verstka',
+        files: ['cover2.png'],
+      },
+      title: 'Адаптивная вёрстка главной страницы и меню',
+      subtitle: 'Вёрстка учебная',
+      links: ['', ''],
+      stack: {
+        backend: [],
+        frontend: ['js', 'html', 'css'],
+        add: [],
+      },
+      competencies: ['вёрстка Flex', 'валидация формы JS', 'анимация меню'],
+      competencies_description: `Верстка с использованием flex-box и валидации формы ввода имени/e-mail/сообщения`,
+      short_description: 'Адаптивная вёрстка главной страницы и меню по png картинке',
+    },
+    {
+      id: 6,
+      date: '2019-11-13',
+      cover: 'cover3.png',
+      images: {
+        folder: 'verstka',
+        files: ['cover3.png'],
+      },
+      title: 'Вёрстка главной страницы',
+      subtitle: 'Вёрстка учебная',
+      links: ['', ''],
+      stack: {
+        backend: [],
+        frontend: ['js', 'html', 'css'],
+        add: [],
+      },
+      competencies: ['вёрстка', 'слайдер'],
+      competencies_description: `Вёрстка главной страницы с использованием таблиц и добавление анимационного слайдера через билиотеку js для слайдеров`,
+      short_description: 'Табличная вёрстка главной страницы и слайдер с картинками',
+    },
+    {
+      id: 7,
+      date: '2019-11-13',
+      cover: 'cover.png',
+      images: {
+        folder: '',
+        files: ['cover.png'],
+      },
+      title: 'timetocode.com/youbeable.net',
+      subtitle: 'SPA, FullStack',
+      links: ['', ''],
+      stack: {
+        backend: ['Laravel 8'],
+        frontend: ['Vue 2', 'Vue Router', 'Vuex', 'Axios', 'Sass'],
+        add: ['webpack'],
+      },
+      competencies: [''],
+      competencies_description: ``,
+      short_description: '',
+    },
+    {
+      id: 8,
+      date: '2021-05-24',
+      cover: 'cover.png',
+      images: {
+        folder: '',
+        files: ['cover.png'],
+      },
+      title: 'manga.ai',
+      subtitle: 'SPA(MPA)',
+      links: ['', ''],
+      stack: {
+        backend: [''],
+        frontend: ['Nuxt 2', 'Vuex', 'Axios', 'Sass'],
+        add: ['webpack'],
+      },
+      competencies: [''],
+      competencies_description: ``,
+      short_description: '',
+    },
+    {
+      id: 9,
+      date: '2021-06-26',
+      cover: 'cover.png',
+      images: {
+        folder: 'mangamir',
+        files: ['cover.png'],
+      },
+      title: 'api.manga.ai',
+      subtitle: 'Backend, API',
+      links: ['', ''],
+      stack: {
+        backend: ['Laravel 10'],
+        frontend: [''],
+        add: [''],
+      },
+      competencies: [''],
+      competencies_description: ``,
+      short_description: '',
+    },
+    {
+      id: 10,
+      date: '2023-07-11',
+      cover: 'cover.png',
+      images: {
+        folder: 'v2.mangamir',
+        files: ['cover.png'],
+      },
+      title: 'v2.mangamir.ru',
+      subtitle: 'SPA(MPA)',
+      links: ['', ''],
+      stack: {
+        backend: [''],
+        frontend: ['TypeScript', 'Nuxt 3', 'Pinia', 'Fetch', 'Element Plus', 'Sass'],
+        add: ['Vite', 'SSR'],
+      },
+      competencies: [''],
+      competencies_description: ``,
+      short_description: '',
     },
   ],
 }
