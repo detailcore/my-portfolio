@@ -93,7 +93,7 @@ const getStack = (arr) => arr.join(', ')
         </p>
         <NuxtPicture
           class="flex"
-          :src="`/works/${work.images.folder}/${work.cover}`"
+          :src="`/images/works/${work.images.folder}/${work.cover}`"
           :img-attrs="{ class: 'w-full rounded-md' }"
           loading="lazy"
         />

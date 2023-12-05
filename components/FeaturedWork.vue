@@ -13,7 +13,7 @@ const year = computed(() => new Date(work.date).getFullYear())
   <div class="flex flex-col sm:flex-row">
     <NuxtPicture
       class="flex sm:shrink-0"
-      :src="`/works/${work.images.folder}/${work.cover}`"
+      :src="`/images/works/${work.images.folder}/${work.cover}`"
       :img-attrs="{ class: 'w-full rounded-md sm:mr-5 sm:h-[180px] sm:w-[246px]' }"
       loading="lazy"
     />

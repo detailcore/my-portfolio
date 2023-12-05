@@ -7,8 +7,8 @@ import { greeting } from '../mock/index'
     class="flex min-h-[525px] flex-col items-center justify-between bg-[#fff] sm:flex-row-reverse"
   >
     <div class="relative flex rounded-[50%] sm:h-60 sm:w-60">
-      <img
-        src="@/assets/images/avatar.png"
+      <NuxtImg
+        src="/images/avatar.png"
         alt="avatar"
         class="mb-10 h-44 max-h-[170px] w-44 max-w-[170px] rounded-[50%] sm:min-h-[243px] sm:min-w-[243px]"
       />

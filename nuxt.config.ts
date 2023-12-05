@@ -22,9 +22,8 @@ export default defineNuxtConfig({
 
   // https://image.nuxt.com/get-started/configuration
   image: {
-    quality: 75,
+    // quality: 70,
     format: ['webp'],
-    dir: 'assets/images',
   },
 
   purgecss: {
