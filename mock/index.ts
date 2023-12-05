@@ -127,6 +127,86 @@ const data = {
     },
     {
       id: 2,
+      date: '2019-10-27',
+      cover: 'cover1.png',
+      images: {
+        folder: 'verstka',
+        files: ['cover1.png'],
+      },
+      title: 'Учебная вёрстка первого экрана',
+      subtitle: 'Вёрстка учебная',
+      links: ['', ''],
+      stack: {
+        backend: [],
+        frontend: ['html', 'css'],
+        add: [],
+      },
+      competencies: ['верстка'],
+      competencies_description: `Верстка первого экрана под ПК`,
+      short_description: 'Обычная верстка первого экрана для ПК по макету из фотошопа',
+    },
+    {
+      id: 3,
+      date: '2019-11-13',
+      cover: 'cover3.png',
+      images: {
+        folder: 'verstka',
+        files: ['cover3.png'],
+      },
+      title: 'Вёрстка главной страницы',
+      subtitle: 'Вёрстка учебная',
+      links: ['', ''],
+      stack: {
+        backend: [],
+        frontend: ['js', 'html', 'css'],
+        add: [],
+      },
+      competencies: ['вёрстка', 'слайдер'],
+      competencies_description: `Вёрстка главной страницы с использованием таблиц и добавление анимационного слайдера через билиотеку js для слайдеров`,
+      short_description: 'Табличная вёрстка главной страницы и слайдер с картинками',
+    },
+    {
+      id: 4,
+      date: '2019-12-26',
+      cover: 'cover2.png',
+      images: {
+        folder: 'verstka',
+        files: ['cover2.png'],
+      },
+      title: 'Адаптивная вёрстка главной страницы и меню',
+      subtitle: 'Вёрстка учебная',
+      links: ['', ''],
+      stack: {
+        backend: [],
+        frontend: ['js', 'html', 'css'],
+        add: [],
+      },
+      competencies: ['вёрстка Flex', 'валидация формы JS', 'анимация меню'],
+      competencies_description: `Верстка с использованием flex-box и валидации формы ввода имени/e-mail/сообщения`,
+      short_description: 'Адаптивная вёрстка главной страницы и меню по png картинке',
+    },
+    {
+      id: 5,
+      date: '2021-03-15',
+      cover: 'cover.png',
+      images: {
+        folder: '',
+        files: ['cover.png'],
+      },
+      title: 'timetocode.com/youbeable.net',
+      subtitle: 'SPA, FullStack, Учёба',
+      links: ['', ''],
+      stack: {
+        backend: ['Laravel 8'],
+        frontend: ['Vue 2', 'Vue Router', 'Vuex', 'Axios', 'Sass'],
+        add: ['webpack'],
+      },
+      competencies: [''],
+      competencies_description: ``,
+      short_description: '',
+    },
+    {
+      id: 6,
       date: '2021-05-15',
       cover: 'cover.png',
       images: {
@@ -134,7 +214,7 @@ const data = {
         files: ['cover.png'],
       },
       title: 'Publication parser & Download content',
-      subtitle: 'SPA',
+      subtitle: 'SPA, Parser',
       links: [
         'https://github.com/detailcore/i141.parser.mangaclub.ru',
         'https://parsepost.mangaclub.ru/',
@@ -167,7 +247,61 @@ const data = {
         'Автоматизация, а если точнее то, требовалось переложить ручную рутинную работу с человека и уменьшить затраты человекочасов на повторение одних и тех же действий, с чем в полной мере справился используя современные средства разработки.',
     },
     {
-      id: 3,
+      id: 7,
+      date: '2021-05-24',
+      cover: 'cover.png',
+      images: {
+        folder: 'mangamir',
+        files: ['cover.png'],
+      },
+      title: 'manga.ai',
+      subtitle: 'SPA(MPA)',
+      links: ['', ''],
+      stack: {
+        backend: [],
+        frontend: ['Nuxt 2', 'Vuex', 'Axios', 'Sass'],
+        add: ['PM2'],
+      },
+      competencies: [''],
+      competencies_description: ``,
+      short_description: '',
+    },
+    {
+      id: 8,
+      date: '2021-06-26',
+      cover: 'cover.png',
+      images: {
+        folder: 'api.mangamir',
+        files: ['cover.png'],
+      },
+      title: 'Внешнее API для фронтенда',
+      subtitle: 'Backend, RESTful API',
+      links: ['', ''],
+      stack: {
+        backend: [
+          'Laravel 8-10',
+          'Laravel-permission',
+          'Fortify',
+          'Sanctum',
+          'Socialite',
+          'Telescope',
+        ],
+        frontend: [],
+        add: ['intervention/image', 'spatie/image-optimizer'],
+      },
+      competencies: ['проектирование БД', 'ручное тестирование CRUD'],
+      competencies_description: `
+          -- написание API с нуля используя Laravel
+          -- авторизация через социальные сети
+          -- загрузка и сжатие изображений через "intervention/image"
+          -- ручное тестирование CRUD операций через Postman/Insomnia
+          -- оптимизация запросов к БД через Telescope
+          -- проектирование базы данных MySQL`,
+      short_description:
+        'Спроектировать бекенд часть приложения (написать API) для работы с фронтенд частью приложения на другом домене.',
+    },
+    {
+      id: 9,
       date: '2023-03-14',
       cover: 'cover.png',
       images: {
@@ -178,9 +312,9 @@ const data = {
       subtitle: 'SPA in legacy',
       links: ['', ''],
       stack: {
-        backend: ['Node.js', 'PM2', 'MySQL'],
-        frontend: ['Vue 3', 'Pinia'],
-        add: ['Vite', 'cors', 'jsonwebtoken', 'mysql2', 'fetch'],
+        backend: ['Node.js', 'MySQL', 'cors', 'jsonwebtoken'],
+        frontend: ['Vue 3', 'Pinia', 'Fetch'],
+        add: ['Vite', 'PM2', 'fetch'],
       },
       competencies: ['Разработка чата на базе legacy проекта'],
       competencies_description: `
@@ -194,127 +328,35 @@ const data = {
         'Было необходимо написать чат для общения между авторизованными пользователями и интегрировать его в текущий проект.',
     },
     {
-      id: 4,
-      date: '2019-10-27',
-      cover: 'cover1.png',
-      images: {
-        folder: 'verstka',
-        files: ['cover1.png'],
-      },
-      title: 'Учебная вёрстка первого экрана',
-      subtitle: 'Вёрстка учебная',
-      links: ['', ''],
-      stack: {
-        backend: [],
-        frontend: ['html', 'css'],
-        add: [],
-      },
-      competencies: ['верстка'],
-      competencies_description: `Верстка первого экрана под ПК`,
-      short_description: 'Обычная верстка первого экрана для ПК по макету из фотошопа',
-    },
-    {
-      id: 5,
-      date: '2019-12-26',
-      cover: 'cover2.png',
-      images: {
-        folder: 'verstka',
-        files: ['cover2.png'],
-      },
-      title: 'Адаптивная вёрстка главной страницы и меню',
-      subtitle: 'Вёрстка учебная',
-      links: ['', ''],
-      stack: {
-        backend: [],
-        frontend: ['js', 'html', 'css'],
-        add: [],
-      },
-      competencies: ['вёрстка Flex', 'валидация формы JS', 'анимация меню'],
-      competencies_description: `Верстка с использованием flex-box и валидации формы ввода имени/e-mail/сообщения`,
-      short_description: 'Адаптивная вёрстка главной страницы и меню по png картинке',
-    },
-    {
-      id: 6,
-      date: '2019-11-13',
-      cover: 'cover3.png',
-      images: {
-        folder: 'verstka',
-        files: ['cover3.png'],
-      },
-      title: 'Вёрстка главной страницы',
-      subtitle: 'Вёрстка учебная',
-      links: ['', ''],
-      stack: {
-        backend: [],
-        frontend: ['js', 'html', 'css'],
-        add: [],
-      },
-      competencies: ['вёрстка', 'слайдер'],
-      competencies_description: `Вёрстка главной страницы с использованием таблиц и добавление анимационного слайдера через билиотеку js для слайдеров`,
-      short_description: 'Табличная вёрстка главной страницы и слайдер с картинками',
-    },
-    {
-      id: 7,
-      date: '2019-11-13',
-      cover: 'cover.png',
-      images: {
-        folder: '',
-        files: ['cover.png'],
-      },
-      title: 'timetocode.com/youbeable.net',
-      subtitle: 'SPA, FullStack',
-      links: ['', ''],
-      stack: {
-        backend: ['Laravel 8'],
-        frontend: ['Vue 2', 'Vue Router', 'Vuex', 'Axios', 'Sass'],
-        add: ['webpack'],
-      },
-      competencies: [''],
-      competencies_description: ``,
-      short_description: '',
-    },
-    {
-      id: 8,
-      date: '2021-05-24',
-      cover: 'cover.png',
-      images: {
-        folder: '',
-        files: ['cover.png'],
-      },
-      title: 'manga.ai',
-      subtitle: 'SPA(MPA)',
-      links: ['', ''],
-      stack: {
-        backend: [''],
-        frontend: ['Nuxt 2', 'Vuex', 'Axios', 'Sass'],
-        add: ['webpack'],
-      },
-      competencies: [''],
-      competencies_description: ``,
-      short_description: '',
-    },
-    {
-      id: 9,
-      date: '2021-06-26',
-      cover: 'cover.png',
-      images: {
-        folder: 'mangamir',
-        files: ['cover.png'],
-      },
-      title: 'api.manga.ai',
-      subtitle: 'Backend, API',
-      links: ['', ''],
-      stack: {
-        backend: ['Laravel 10'],
-        frontend: [''],
-        add: [''],
-      },
-      competencies: [''],
-      competencies_description: ``,
-      short_description: '',
-    },
-    {
       id: 10,
+      date: '2023-05-19',
+      cover: 'cover.png',
+      images: {
+        folder: 'pdf-2-img',
+        files: ['cover.png'],
+      },
+      title: 'pdf-to-image',
+      subtitle: 'SPA, Node.js',
+      links: ['https://github.com/detailcore/pdf-to-image.ai', ''],
+      stack: {
+        backend: ['Node.js', 'Sharp', 'Express', 'pdf-img-convert', 'adm-zip'],
+        frontend: ['Vue 3', 'js', 'jszip'],
+        add: ['Vite'],
+      },
+      competencies: ['разработка бекенда', 'разработка фронтенда', 'ручное тестирование'],
+      competencies_description: `
+          -- разработка конвертера из .pdf в архив с картинками
+          -- разработка конвертера из .zip архива с картинками в архив со склеенными картинками
+          -- работка с изображениями через буфер
+          -- использование библиотеки "pdf-img-conver" для получения буфера страниц из файла .pdf
+          -- использование библиотеки "Sharp" для работы с буфером изображений (нарезка и/или склейка)
+          -- использование "jszip" для сохранения изображений на фронте в архив
+          -- ручное тестирование финального результата`,
+      short_description:
+        'Конвертер .pdf файлов в картинки форматов .webp|.png|.jpeg с параметрами склейки изображений и увеличения. На выходе получаем картинки разделённые по страницам как в pdf, либо склеенные в столбик.',
+    },
+    {
+      id: 11,
       date: '2023-07-11',
       cover: 'cover.png',
       images: {
@@ -322,16 +364,102 @@ const data = {
         files: ['cover.png'],
       },
       title: 'v2.mangamir.ru',
-      subtitle: 'SPA(MPA)',
+      subtitle: 'SPA(MPA), FullStack',
+      links: ['', 'https://v2.mangamir.ru/'],
+      stack: {
+        backend: ['Laravel'],
+        frontend: ['TypeScript', 'Nuxt 3', 'Pinia', 'Fetch', 'Element Plus', 'Sass'],
+        add: ['Vite', 'SSR', 'PM2'],
+      },
+      competencies: ['API (v2)', 'фронтенд на Nuxt 3', 'ручное тестирование', 'вёрстка'],
+      competencies_description: `
+          -- написание второй версии RESTful API (v2) для обновлённого внешнего интерфейса
+          -- разработка фронтенда на Nuxt 3 с использованием TypeScript
+          -- вёрстка с использованием Element Plus`,
+      short_description:
+        'Написание второй версии RESTful API (v2) на базе существующей базы данных и обновление внешнего интерфейса с использованием UI библиотеки Element Plus.',
+    },
+    {
+      id: 12,
+      date: '2023-10-16',
+      cover: 'cover.png',
+      images: {
+        folder: 'vue-discord',
+        files: ['cover.png'],
+      },
+      title: 'Клон Discord',
+      subtitle: 'SPA, Tailwindcss, Учёба',
       links: ['', ''],
       stack: {
-        backend: [''],
-        frontend: ['TypeScript', 'Nuxt 3', 'Pinia', 'Fetch', 'Element Plus', 'Sass'],
-        add: ['Vite', 'SSR'],
+        backend: [],
+        frontend: ['Vue 3', 'Vue Router', 'Pinia', 'Tailwindcss', 'TypeScript'],
+        add: ['Vite'],
       },
-      competencies: [''],
-      competencies_description: ``,
-      short_description: '',
+      competencies: ['вёрстка', 'Tailwindcss', 'Vue', 'TS'],
+      competencies_description: `
+          -- вёрстка с использованием Tailwindcss
+          -- фронтенд часть выполнена на фреймворке Vue 3`,
+      short_description:
+        'Частичный клон (фронтенд) социальной сети Дискорд с отображением каналов и сообщений в них. Только ПК версия некторых страниц.',
+    },
+    {
+      id: 13,
+      date: '2023-11-27',
+      cover: 'cover.png',
+      images: {
+        folder: 'vue-table',
+        files: ['cover.png'],
+      },
+      title: 'Таблица с сортировкой и фильтром',
+      subtitle: 'SPA, Tailwindcss, Учёба',
+      links: ['https://github.com/detailcore/vue3-table-test', ''],
+      stack: {
+        backend: [],
+        frontend: ['Vue 3', 'Vue Router', 'Tailwindcss', 'JS'],
+        add: ['Vite'],
+      },
+      competencies: ['JS', 'Vue', 'Tailwindcss'],
+      competencies_description: `
+          -- вёрстка с использованием Tailwindcss
+          -- фронтенд часть выполнена на фреймворке Vue 3`,
+      short_description:
+        'Требовалось создать простую таблицу с использованием Vue 3, которая будет отображать данные из JSON и обеспечивать сортировку по всем столбцам и некоторую фильтрацию',
+    },
+    {
+      id: 14,
+      date: '2022-06-22',
+      cover: 'cover.png',
+      images: {
+        folder: '',
+        files: ['cover.png'],
+      },
+      title: 'Mega-Content-Parser',
+      subtitle: 'Playwright, Parser',
+      links: ['https://github.com/detailcore/MangaLibParser', ''],
+      stack: {
+        backend: [
+          'Node.js',
+          'MySQL',
+          'Playwright',
+          'Knex',
+          'Sharp',
+          'Moment',
+          'Lodash',
+          'Jimp',
+          'Axios',
+        ],
+        frontend: [],
+        add: [],
+      },
+      competencies: ['Разработка', 'Тестирование', 'Сохранение данных'],
+      competencies_description: `
+          -- разработка бекенд части парсера
+          -- проектирование БД парсера
+          -- авторизация и сохранение состояния безголового браузера 
+          -- использовать безголовый браузер Playwright
+          -- запуск парсера через CRON`,
+      short_description:
+        'Требовалось разработать мега-парсер, для полного клонирования контента сайта, сохранения данных в базу данных (порядка 6 ГБ) и файлов (больше 5 ТБ). Сложность заключалась в том, что клонируемый сайт был защищён.',
     },
   ],
 }
