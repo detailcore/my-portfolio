@@ -190,7 +190,7 @@ const data = {
       date: '2021-03-15',
       cover: 'cover.png',
       images: {
-        folder: '',
+        folder: 'vue-table',
         files: ['cover.png'],
       },
       title: 'timetocode.com/youbeable.net',
@@ -433,7 +433,7 @@ const data = {
       date: '2022-06-22',
       cover: 'cover.png',
       images: {
-        folder: '',
+        folder: 'vue-table',
         files: ['cover.png'],
       },
       title: 'Mega-Content-Parser',
