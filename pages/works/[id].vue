@@ -7,11 +7,6 @@ const work = computed(() => {
   return works.filter((i) => +i.id === +route.params.id)[0]
 })
 
-// const stack = computed(() => {
-//   return ''
-//   // return work.value.stack.join(', ')
-// })
-
 const competencies = computed(() => {
   return work.value.competencies.join(', ')
 })

@@ -1,9 +1,7 @@
 <script setup>
 import { works } from '@/mock/index'
 
-// onMounted(() => {
-//   works.sort((a, b) => new Date(b.date) - new Date(a.date))
-// })
+const all = computed(() => works)
 </script>
 
 <template>
@@ -14,7 +12,7 @@ import { works } from '@/mock/index'
     </div>
 
     <div class="divide-y">
-      <FeaturedWork v-for="item of works" :key="item.id" :work="item" class="py-6" />
+      <FeaturedWork v-for="item of all" :key="item.id" :work="item" class="py-6" />
     </div>
   </div>
 </template>

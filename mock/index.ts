@@ -412,7 +412,10 @@ const data = {
       },
       title: 'Таблица с сортировкой и фильтром',
       subtitle: 'SPA, Tailwindcss, Учёба',
-      links: ['https://github.com/detailcore/vue3-table-test', ''],
+      links: [
+        'https://github.com/detailcore/vue3-table-test',
+        'https://ermolaev.website/#projects/vue3-table',
+      ],
       stack: {
         backend: [],
         frontend: ['Vue 3', 'Vue Router', 'Tailwindcss', 'JS'],
