@@ -1,9 +1,6 @@
-/.svelte/
 /build/
-/functions/
+/dist/
 /node_modules/
-/static/
-/tmp/
 /projects/
 /.projects/
 *.cjs

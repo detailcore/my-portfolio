@@ -414,7 +414,7 @@ const data = {
       subtitle: 'SPA, Tailwindcss, Учёба',
       links: [
         'https://github.com/detailcore/vue3-table-test',
-        'https://ermolaev.website/#projects/vue3-table',
+        'https://ermolaev.website/.projects/vue3-table/dist',
       ],
       stack: {
         backend: [],
