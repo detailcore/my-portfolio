@@ -12,7 +12,7 @@ defineProps({
     <NuxtLink
       active-class="text-primary"
       class="text-2xl font-bold transition hover:text-primary active:text-primary"
-      :to="`/posts/${post.id}`"
+      :to="`/${post.id}-post`"
     >
       #{{ post.id }}. {{ post.title }}
     </NuxtLink>

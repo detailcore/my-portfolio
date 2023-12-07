@@ -10,6 +10,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/styles/base.scss'], // global styles
 
+  ignore: ['.projects/**/*'],
+
+  generate: {
+    exclude: [/^\/.projects/], // exclude every URL starting with "/.projects"
+  },
+
   modules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',

@@ -21,7 +21,7 @@ const year = computed(() => new Date(work.date).getFullYear())
       <NuxtLink
         active-class="text-primary"
         class="text-3xl font-bold transition hover:text-primary active:text-primary"
-        :to="`/works/${work.id}`"
+        :to="`/${work.id}-work`"
       >
         #{{ work.id }}. {{ work.title }} <span v-if="work.links[0] === ''">(private)</span>
       </NuxtLink>
