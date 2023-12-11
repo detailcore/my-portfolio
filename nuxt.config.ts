@@ -8,13 +8,11 @@ export default defineNuxtConfig({
     enabled: false,
   },
 
+  // app: {
+  //   keepalive: true,
+  // },
+
   css: ['~/assets/styles/base.scss'], // global styles
-
-  ignore: ['.projects/**/*'],
-
-  generate: {
-    exclude: [/^\/.projects/], // exclude every URL starting with "/.projects"
-  },
 
   modules: [
     '@nuxtjs/eslint-module',
