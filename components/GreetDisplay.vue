@@ -16,7 +16,7 @@ import { greeting } from '../mock/index'
     </div>
 
     <div class="mb-14 flex flex-col items-center text-center sm:mb-16 sm:block sm:text-left">
-      <div class="max-w-[506px] text-5xl font-bold">
+      <div class="max-w-[506px] text-4xl font-bold sm:text-5xl">
         {{ greeting.title }}
       </div>
       <div class="my-10 sm:mr-4">

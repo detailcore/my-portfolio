@@ -10,8 +10,8 @@ const latest = computed(() => {
   <div class="custom-line min-h-[396px]">
     <div class="flex items-center justify-center py-6 text-2xl sm:justify-between">
       <div>Недавние публикации</div>
-      <NuxtLink to="/posts" class="hidden text-base text-secondry sm:block">
-        Смотреть все
+      <NuxtLink to="/posts" class="hidden text-base text-secondry hover:text-primary sm:block">
+        Смотреть все посты
       </NuxtLink>
     </div>
     <div class="-mt-5 pb-6 text-center text-light sm:text-left">
@@ -19,12 +19,14 @@ const latest = computed(() => {
     </div>
 
     <div class="flex flex-col sm:flex-row">
-      <div
-        v-for="item of latest"
-        :key="item.id"
-        class="last:mt-0 sm:w-[50%] sm:last:ml-5 sm:last:mt-0"
-      >
+      <div v-for="item of latest" :key="item.id" class="sm:w-[50%] sm:first:mr-5 sm:first:mt-0">
         <RecentPost :post="item" />
+      </div>
+
+      <div class="-mt-5 mb-5 flex w-full justify-center sm:hidden">
+        <NuxtLink to="/posts" class="text-lg text-secondry hover:text-primary">
+          Смотреть все посты
+        </NuxtLink>
       </div>
     </div>
   </div>
