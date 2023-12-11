@@ -18,7 +18,7 @@ const data: IData = {
   greeting: {
     title: 'Меня зовут Игорь, \nя - Frontend Vue.js разработчик',
     short_description:
-      'Привет, случайно или нет, но ты уже здесь и возможно читаешь эти строки. Да это очень простенький сайт, на котором размещена некоторая информация обо мне и моих проектах (с примерами кода). Макет взят из свободного доступа с фигмы (ссылку ищите внизу).',
+      'Привет, случайно или нет, но ты уже здесь и возможно читаешь эти строки. Да это очень простенький сайт, на котором размещена некоторая информация обо мне и моих проектах (с примерами кода).',
   },
   posts: [
     {
@@ -142,7 +142,7 @@ const data: IData = {
       },
       title: 'Учебная вёрстка первого экрана',
       subtitle: 'Вёрстка учебная',
-      links: ['', ''],
+      links: ['', 'https://layout.ermolaev.website/2/'],
       stack: {
         backend: [],
         frontend: ['html', 'css'],
@@ -162,7 +162,7 @@ const data: IData = {
       },
       title: 'Вёрстка главной страницы',
       subtitle: 'Вёрстка учебная',
-      links: ['', ''],
+      links: ['', 'https://layout.ermolaev.website/3/'],
       stack: {
         backend: [],
         frontend: ['js', 'html', 'css'],
@@ -182,7 +182,7 @@ const data: IData = {
       },
       title: 'Адаптивная вёрстка главной страницы и меню',
       subtitle: 'Вёрстка учебная',
-      links: ['', ''],
+      links: ['', 'https://layout.ermolaev.website/4/'],
       stack: {
         backend: [],
         frontend: ['js', 'html', 'css'],
@@ -202,7 +202,7 @@ const data: IData = {
       },
       title: 'timetocode.com/youbeable.net',
       subtitle: 'SPA, FullStack, Учёба',
-      links: ['', ''],
+      links: ['', 'https://youbeable.ermolaev.website'],
       stack: {
         backend: ['Laravel 8'],
         frontend: ['Vue 2', 'Vue Router', 'Vuex', 'Axios', 'Sass'],
@@ -421,7 +421,7 @@ const data: IData = {
       subtitle: 'SPA, Tailwindcss, Учёба',
       links: [
         'https://github.com/detailcore/vue3-table-test',
-        'https://ermolaev.website/.projects/vue3-table/dist',
+        'https://vue3-table.ermolaev.website',
       ],
       stack: {
         backend: [],
@@ -470,6 +470,32 @@ const data: IData = {
           -- запуск парсера через CRON`,
       short_description:
         'Требовалось разработать мега-парсер, для полного клонирования контента сайта, сохранения данных в базу данных (порядка 6 ГБ) и файлов (больше 5 ТБ). Сложность заключалась в том, что клонируемый сайт был защищён.',
+    },
+    {
+      id: 15,
+      date: '2023-11-29',
+      cover: 'cover.png',
+      images: {
+        folder: 'portfolio',
+        files: ['cover.png'],
+      },
+      title: 'Portfolio',
+      subtitle: 'SPA, Nuxt 3, SSR',
+      links: ['https://github.com/detailcore/my-portfolio', 'https://ermolaev.website/'],
+      stack: {
+        backend: [],
+        frontend: ['Nuxt 3', 'Tailwindcss'],
+        add: ['Composition API', 'EsLint', 'Prettier'],
+      },
+      competencies: ['Вёрстка', 'Разработка'],
+      competencies_description: `
+          -- вёрстка страниц по Figma
+          -- описание структуры данных
+          -- настройка Nuxt и установка вспомогательных модулей
+          -- написание статей
+          -- деплой всех проектов и открытие репозиториев на гитхабе`,
+      short_description:
+        'Задумка сайта-портфолио заключается в том, что бы описать ближайшие планы в коротких постах и объеденить некоторые мои работы на одном сайте (а так же ссылки на гитхаб) и показывать работы как часть резюме.',
     },
   ],
 }
