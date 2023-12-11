@@ -5,7 +5,7 @@ export const navLinks = reactive([
   { name: 'Главная', link: '/' },
   { name: 'Работы', link: '/works' },
   { name: 'Блог', link: '/posts' },
-  // { name: 'Контанкты', link: '/contact' },
+  { name: 'Контанкты', link: '/contact' },
 ])
 
 interface IData {
