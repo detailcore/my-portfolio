@@ -17,6 +17,16 @@ const description = computed<string>(() => {
 })
 
 const getStack = (arr: string[]) => arr.join(', ')
+
+useHead({
+  title: work.value.title,
+  meta: [
+    {
+      name: 'description',
+      content: work.value.short_description,
+    },
+  ],
+})
 </script>
 
 <template>

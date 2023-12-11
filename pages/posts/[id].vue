@@ -7,6 +7,16 @@ const route = useRoute()
 const post = computed<IPost>(() => {
   return posts.filter((i) => +i.id === +route.params.id)[0]
 })
+
+useHead({
+  title: post.value.title,
+  meta: [
+    {
+      name: 'description',
+      content: post.value.short_description,
+    },
+  ],
+})
 </script>
 
 <template>

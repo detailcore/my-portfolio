@@ -1,5 +1,15 @@
 <script setup lang="ts">
 import { works } from '@/mock/index'
+
+useHead({
+  title: 'Список избранных проектов',
+  meta: [
+    {
+      name: 'description',
+      content: 'Список некоторых избранных преоктов, как учебных так и рабочих',
+    },
+  ],
+})
 </script>
 
 <template>
