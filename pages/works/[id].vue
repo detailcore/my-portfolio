@@ -1,33 +1,29 @@
-<script setup>
+<script setup lang="ts">
 import { works } from '@/mock/index'
+import type { IWork } from '@/mock/index.interface'
 
 const route = useRoute()
 
-const work = computed(() => {
+const work = computed<IWork>(() => {
   return works.filter((i) => +i.id === +route.params.id)[0]
 })
 
-const competencies = computed(() => {
+const competencies = computed<string>(() => {
   return work.value.competencies.join(', ')
 })
 
-const description = computed(() => {
+const description = computed<string>(() => {
   return work.value.competencies_description
 })
 
-const getStack = (arr) => arr.join(', ')
+const getStack = (arr: string[]) => arr.join(', ')
 </script>
 
 <template>
   <div class="min-h-screen">
     <h1 class="mb-4 text-2xl font-bold">{{ work.title }}</h1>
 
-    <div class="mb-6 mt-4 flex flex-row items-center sm:mb-0 sm:mt-0">
-      <div class="mr-6 rounded-2xl bg-[#142850] px-2 text-lg font-black text-gray-50">
-        {{ useDateFormat(work.date) }}
-      </div>
-      <div class="text-xl text-light">{{ work.subtitle }}</div>
-    </div>
+    <SubText :date="useDateFormat(work.date)" :subtitle="work.subtitle" />
 
     <div class="py-6 indent-4">
       <div>

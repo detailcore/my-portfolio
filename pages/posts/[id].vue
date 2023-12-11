@@ -1,9 +1,10 @@
-<script setup>
+<script setup lang="ts">
 import { posts } from '@/mock/index'
+import type { IPost } from '@/mock/index.interface'
 
 const route = useRoute()
 
-const post = computed(() => {
+const post = computed<IPost>(() => {
   return posts.filter((i) => +i.id === +route.params.id)[0]
 })
 </script>

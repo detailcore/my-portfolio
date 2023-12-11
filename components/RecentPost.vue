@@ -1,10 +1,9 @@
-<script setup>
-defineProps({
-  post: {
-    type: Object,
-    required: true,
-  },
-})
+<script setup lang="ts">
+import type { IPost } from '@/mock/index.interface'
+
+defineProps<{
+  post: IPost
+}>()
 </script>
 
 <template>

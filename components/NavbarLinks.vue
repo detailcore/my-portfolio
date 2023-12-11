@@ -1,10 +1,9 @@
-<script setup>
-defineProps({
-  links: {
-    type: Array,
-    required: true,
-  },
-})
+<script setup lang="ts">
+import type { INavLinks } from '@/mock/index.interface'
+
+defineProps<{
+  links: INavLinks[]
+}>()
 </script>
 
 <template>

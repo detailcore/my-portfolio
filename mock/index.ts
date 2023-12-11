@@ -1,4 +1,5 @@
 import { reactive } from 'vue'
+import type { IGreeting, IPost, IWork } from '@/mock/index.interface'
 
 export const navLinks = reactive([
   { name: 'Главная', link: '/' },
@@ -7,7 +8,13 @@ export const navLinks = reactive([
   // { name: 'Контанкты', link: '/contact' },
 ])
 
-const data = {
+interface IData {
+  greeting: IGreeting
+  posts: IPost[]
+  works: IWork[]
+}
+
+const data: IData = {
   greeting: {
     title: 'Меня зовут Игорь, \nя - Frontend Vue.js разработчик',
     short_description:
@@ -467,11 +474,11 @@ const data = {
   ],
 }
 
-const greeting = reactive(data.greeting)
-const posts = reactive(
+const greeting = reactive<IGreeting>(data.greeting)
+const posts = reactive<IPost[]>(
   data.posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
 )
-const works = reactive(
+const works = reactive<IWork[]>(
   data.works.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
 )
 

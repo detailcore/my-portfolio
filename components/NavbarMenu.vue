@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { navLinks as links } from '@/mock/index'
 </script>
 
