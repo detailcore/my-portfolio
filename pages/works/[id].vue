@@ -98,11 +98,16 @@ useHead({
           <b>Скриншот проекта:</b>
         </p>
         <NuxtPicture
+          v-if="work.images.files.length"
           class="flex"
           :src="`/images/works/${work.images.folder}/${work.cover}`"
           :img-attrs="{ class: 'w-full rounded-md' }"
           loading="lazy"
         />
+        <p v-else>
+          Отсутствует!
+          <IconsNoImage />
+        </p>
       </div>
     </div>
   </div>

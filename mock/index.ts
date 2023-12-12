@@ -142,7 +142,10 @@ const data: IData = {
       },
       title: 'Учебная вёрстка первого экрана',
       subtitle: 'Вёрстка учебная',
-      links: ['', 'https://layout.ermolaev.website/2/'],
+      links: [
+        'https://github.com/detailcore/verstka/tree/master/2',
+        'https://layout.ermolaev.website/2/',
+      ],
       stack: {
         backend: [],
         frontend: ['html', 'css'],
@@ -162,7 +165,10 @@ const data: IData = {
       },
       title: 'Вёрстка главной страницы',
       subtitle: 'Вёрстка учебная',
-      links: ['', 'https://layout.ermolaev.website/3/'],
+      links: [
+        'https://github.com/detailcore/verstka/tree/master/3',
+        'https://layout.ermolaev.website/3/',
+      ],
       stack: {
         backend: [],
         frontend: ['js', 'html', 'css'],
@@ -180,9 +186,12 @@ const data: IData = {
         folder: 'verstka',
         files: ['cover2.png'],
       },
-      title: 'Адаптивная вёрстка главной страницы и меню',
+      title: 'Вёрстка главной страницы и меню',
       subtitle: 'Вёрстка учебная',
-      links: ['', 'https://layout.ermolaev.website/4/'],
+      links: [
+        'https://github.com/detailcore/verstka/tree/master/4',
+        'https://layout.ermolaev.website/4/',
+      ],
       stack: {
         backend: [],
         frontend: ['js', 'html', 'css'],
@@ -190,27 +199,31 @@ const data: IData = {
       },
       competencies: ['вёрстка Flex', 'валидация формы JS', 'анимация меню'],
       competencies_description: `Верстка с использованием flex-box и валидации формы ввода имени/e-mail/сообщения`,
-      short_description: 'Адаптивная вёрстка главной страницы и меню по png картинке',
+      short_description: 'Вёрстка главной страницы и меню по png картинке',
     },
     {
       id: 5,
       date: '2021-03-15',
       cover: 'cover.png',
       images: {
-        folder: 'vue-table',
-        files: ['cover.png'],
+        folder: 'noimage',
+        files: [],
       },
-      title: 'timetocode.com/youbeable.net',
+      title: 'Youbeable',
       subtitle: 'SPA, FullStack, Учёба',
-      links: ['', 'https://youbeable.ermolaev.website'],
+      links: ['https://github.com/detailcore/youbeable', ''],
       stack: {
         backend: ['Laravel 8'],
         frontend: ['Vue 2', 'Vue Router', 'Vuex', 'Axios', 'Sass'],
         add: ['webpack'],
       },
-      competencies: [''],
-      competencies_description: ``,
-      short_description: '',
+      competencies: [],
+      competencies_description: `
+          -- разработка API на Laravel (only read request)
+          -- разработка фронтенда на Vue 2 (options API)
+          -- вёрстка`,
+      short_description:
+        'Задумывался как клон сайта Stackoverflow, но только для чтения и поиска информации на русском языке. К сожалению БД утерена безвозвратно и показать работоспособность не представляется возможным.',
     },
     {
       id: 6,
@@ -222,10 +235,7 @@ const data: IData = {
       },
       title: 'Publication parser & Download content',
       subtitle: 'SPA, Parser',
-      links: [
-        'https://github.com/detailcore/i141.parser.mangaclub.ru',
-        'https://parsepost.mangaclub.ru/',
-      ],
+      links: ['', 'https://parsepost.mangaclub.ru/'],
       stack: {
         backend: ['Laravel 8', 'Node.js', 'MySQL'],
         frontend: ['Vue 2', 'Vue Router', 'Vuetify', 'Axios', 'JavaScript', 'Sass'],
@@ -261,17 +271,25 @@ const data: IData = {
         folder: 'mangamir',
         files: ['cover.png'],
       },
-      title: 'manga.ai',
+      title: 'Фронтенд часть - mangamir.ru (v1)',
       subtitle: 'SPA(MPA)',
-      links: ['', ''],
+      links: ['https://github.com/detailcore/manga.ai', 'https://mangamir.ru/'],
       stack: {
         backend: [],
         frontend: ['Nuxt 2', 'Vuex', 'Axios', 'Sass'],
-        add: ['PM2'],
+        add: ['PM2', 'Trello'],
       },
-      competencies: [''],
-      competencies_description: ``,
-      short_description: '',
+      competencies: ['Адаптивная вёрстка', 'Разработка фронтенда', 'Ручное тестирование'],
+      competencies_description: `
+          -- адаптивная вёрстка на Flex, без использования UI/UX библиотек
+          -- полная разработка фронтенд части приложения на Nuxt 2 (Options API)
+          -- создание внутренней админки для модераторов
+          -- ручное тестирование в разных браузерах (Firefox, Chromium)
+          -- постановка задач в Trello
+          -- настройка интерцептора Axios и кросдоменных запросов
+      `,
+      short_description:
+        'В приложении была реализована идея онлайн читалки комиксов. При создании ставились задачи в Trello.',
     },
     {
       id: 8,
@@ -283,7 +301,7 @@ const data: IData = {
       },
       title: 'Внешнее API для фронтенда',
       subtitle: 'Backend, RESTful API',
-      links: ['', ''],
+      links: ['', 'https://api.mangamir.ru/api/home/all'],
       stack: {
         backend: [
           'Laravel 8-10',
@@ -298,7 +316,7 @@ const data: IData = {
       },
       competencies: ['проектирование БД', 'ручное тестирование CRUD'],
       competencies_description: `
-          -- написание API с нуля используя Laravel
+          -- написание RESTful API с нуля используя Laravel
           -- авторизация через социальные сети
           -- загрузка и сжатие изображений через "intervention/image"
           -- ручное тестирование CRUD операций через Postman/Insomnia
@@ -309,6 +327,42 @@ const data: IData = {
     },
     {
       id: 9,
+      date: '2022-06-22',
+      cover: 'cover.png',
+      images: {
+        folder: '',
+        files: [],
+      },
+      title: 'Mega-Content-Parser',
+      subtitle: 'Playwright, Parser',
+      links: ['', ''],
+      stack: {
+        backend: [
+          'Node.js',
+          'MySQL',
+          'Playwright',
+          'Knex',
+          'Sharp',
+          'Moment',
+          'Lodash',
+          'Jimp',
+          'Axios',
+        ],
+        frontend: [],
+        add: [],
+      },
+      competencies: ['Разработка', 'Тестирование', 'Сохранение данных'],
+      competencies_description: `
+          -- разработка бекенд части парсера
+          -- проектирование БД парсера
+          -- авторизация и сохранение состояния безголового браузера 
+          -- использовать безголовый браузер Playwright
+          -- запуск парсера через CRON`,
+      short_description:
+        'Требовалось разработать мега-парсер, для полного клонирования контента сайта, сохранения данных в базу данных (порядка 6 ГБ) и файлов (больше 5 ТБ). Сложность заключалась в том, что клонируемый сайт был защищён.',
+    },
+    {
+      id: 10,
       date: '2023-03-14',
       cover: 'cover.png',
       images: {
@@ -335,7 +389,7 @@ const data: IData = {
         'Было необходимо написать чат для общения между авторизованными пользователями и интегрировать его в текущий проект.',
     },
     {
-      id: 10,
+      id: 11,
       date: '2023-05-19',
       cover: 'cover.png',
       images: {
@@ -344,7 +398,10 @@ const data: IData = {
       },
       title: 'pdf-to-image',
       subtitle: 'SPA, Node.js',
-      links: ['https://github.com/detailcore/pdf-to-image.ai', ''],
+      links: [
+        'https://github.com/detailcore/pdf-to-image.ai',
+        'https://pdf-2-img.ermolaev.website/',
+      ],
       stack: {
         backend: ['Node.js', 'Sharp', 'Express', 'pdf-img-convert', 'adm-zip'],
         frontend: ['Vue 3', 'js', 'jszip'],
@@ -363,16 +420,16 @@ const data: IData = {
         'Конвертер .pdf файлов в картинки форматов .webp|.png|.jpeg с параметрами склейки изображений и увеличения. На выходе получаем картинки разделённые по страницам как в pdf, либо склеенные в столбик.',
     },
     {
-      id: 11,
+      id: 12,
       date: '2023-07-11',
       cover: 'cover.png',
       images: {
         folder: 'v2.mangamir',
         files: ['cover.png'],
       },
-      title: 'v2.mangamir.ru',
+      title: 'Фронтенд часть - v2.mangamir.ru',
       subtitle: 'SPA(MPA), FullStack',
-      links: ['', 'https://v2.mangamir.ru/'],
+      links: ['https://github.com/detailcore/v2.manga.ai', 'https://v2.mangamir.ru/'],
       stack: {
         backend: ['Laravel'],
         frontend: ['TypeScript', 'Nuxt 3', 'Pinia', 'Fetch', 'Element Plus', 'Sass'],
@@ -382,12 +439,13 @@ const data: IData = {
       competencies_description: `
           -- написание второй версии RESTful API (v2) для обновлённого внешнего интерфейса
           -- разработка фронтенда на Nuxt 3 с использованием TypeScript
-          -- вёрстка с использованием Element Plus`,
+          -- включена поддрежка рендеринга на стороне сервера (SSR)
+          -- вёрстка с использованием Element Plus UI`,
       short_description:
         'Написание второй версии RESTful API (v2) на базе существующей базы данных и обновление внешнего интерфейса с использованием UI библиотеки Element Plus.',
     },
     {
-      id: 12,
+      id: 13,
       date: '2023-10-16',
       cover: 'cover.png',
       images: {
@@ -410,7 +468,7 @@ const data: IData = {
         'Частичный клон (фронтенд) социальной сети Дискорд с отображением каналов и сообщений в них. Только ПК версия некторых страниц.',
     },
     {
-      id: 13,
+      id: 14,
       date: '2023-11-27',
       cover: 'cover.png',
       images: {
@@ -434,42 +492,6 @@ const data: IData = {
           -- фронтенд часть выполнена на фреймворке Vue 3`,
       short_description:
         'Требовалось создать простую таблицу с использованием Vue 3, которая будет отображать данные из JSON и обеспечивать сортировку по всем столбцам и некоторую фильтрацию',
-    },
-    {
-      id: 14,
-      date: '2022-06-22',
-      cover: 'cover.png',
-      images: {
-        folder: 'vue-table',
-        files: ['cover.png'],
-      },
-      title: 'Mega-Content-Parser',
-      subtitle: 'Playwright, Parser',
-      links: ['https://github.com/detailcore/MangaLibParser', ''],
-      stack: {
-        backend: [
-          'Node.js',
-          'MySQL',
-          'Playwright',
-          'Knex',
-          'Sharp',
-          'Moment',
-          'Lodash',
-          'Jimp',
-          'Axios',
-        ],
-        frontend: [],
-        add: [],
-      },
-      competencies: ['Разработка', 'Тестирование', 'Сохранение данных'],
-      competencies_description: `
-          -- разработка бекенд части парсера
-          -- проектирование БД парсера
-          -- авторизация и сохранение состояния безголового браузера 
-          -- использовать безголовый браузер Playwright
-          -- запуск парсера через CRON`,
-      short_description:
-        'Требовалось разработать мега-парсер, для полного клонирования контента сайта, сохранения данных в базу данных (порядка 6 ГБ) и файлов (больше 5 ТБ). Сложность заключалась в том, что клонируемый сайт был защищён.',
     },
     {
       id: 15,
