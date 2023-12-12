@@ -15,6 +15,8 @@ useHead({
   <div>
     <GreetDisplay />
 
+    <Skills />
+
     <RecentPosts />
 
     <FeaturedWorks />

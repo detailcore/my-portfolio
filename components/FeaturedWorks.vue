@@ -9,7 +9,7 @@ const latest = computed(() => {
 <template>
   <div>
     <div class="flex items-center justify-center py-6 text-2xl sm:justify-between">
-      <div>Избранные работы</div>
+      <div>Избранные работы<Dot /></div>
       <NuxtLink to="/works" class="hidden text-base text-secondry hover:text-primary sm:block">
         Смотреть все работы
       </NuxtLink>

@@ -1,5 +1,5 @@
 import { reactive } from 'vue'
-import type { IGreeting, IPost, IWork } from '@/mock/index.interface'
+import type { INavLinks, IGreeting, ISkills, IPost, IWork } from '@/mock/index.interface'
 
 export const navLinks = reactive([
   { name: 'Главная', link: '/' },
@@ -10,6 +10,7 @@ export const navLinks = reactive([
 
 interface IData {
   greeting: IGreeting
+  skills: ISkills
   posts: IPost[]
   works: IWork[]
 }
@@ -20,6 +21,19 @@ const data: IData = {
     short_description:
       'Привет, случайно или нет, но ты уже здесь и возможно читаешь эти строки. Да это очень простенький сайт, на котором размещена некоторая информация обо мне и моих проектах (с примерами кода).',
   },
+  skills: {
+    frontend:
+      'JavaScript, TypeScript, Vue.js (2 Options API & 3 Composition API), Nuxt.js (2 и 3 SSR), Pinia, Vuex',
+    backend: 'Laravel (fortify, sanctum, socialite, telescope), MySQL, Nginx',
+    ui_ux: 'Tailwindcss, UnoCSS, Element Plus: A Vue 3 UI Framework, Figma, Photoshop',
+    lib: 'Axios, Knex (js), Sharp (js), Intervention Image (php), DiDOM (php content parser), moment.js ',
+    add: 'Playwright, Git, Linux (Ubuntu 16-18 и далее Debian 9-11)',
+  },
+  // resume: {
+  //   skills: {},
+  //   experience: {},
+  //   education: {},
+  // },
   posts: [
     {
       id: 1,
@@ -523,6 +537,7 @@ const data: IData = {
 }
 
 const greeting = reactive<IGreeting>(data.greeting)
+const skills = reactive<ISkills>(data.skills)
 const posts = reactive<IPost[]>(
   data.posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
 )
@@ -530,4 +545,4 @@ const works = reactive<IWork[]>(
   data.works.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
 )
 
-export { greeting, posts, works }
+export { greeting, skills, posts, works }

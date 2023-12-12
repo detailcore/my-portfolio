@@ -18,6 +18,14 @@ export interface IGreeting {
   short_description: string
 }
 
+export interface ISkills {
+  frontend: string
+  backend: string
+  ui_ux: string
+  lib: string
+  add: string
+}
+
 export interface IWork {
   id: number
   date: string
