@@ -7,7 +7,7 @@ const latest = computed(() => {
 </script>
 
 <template>
-  <div>
+  <section>
     <div class="flex items-center justify-center py-6 text-2xl sm:justify-between">
       <div>Избранные работы<Dot /></div>
       <NuxtLink to="/works" class="hidden text-base text-secondry hover:text-primary sm:block">
@@ -19,7 +19,7 @@ const latest = computed(() => {
     </div>
 
     <div class="divide-y">
-      <FeaturedWork v-for="item of latest" :key="item.id" :work="item" class="py-6" />
+      <FeaturedWork v-for="item of latest" :key="item.id" :work="item" class="py-12" />
     </div>
 
     <div class="mb-5 mt-5 flex w-full justify-center sm:hidden">
@@ -27,5 +27,5 @@ const latest = computed(() => {
         Смотреть все проекты
       </NuxtLink>
     </div>
-  </div>
+  </section>
 </template>

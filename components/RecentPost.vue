@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="mb-10 rounded bg-[#fff] p-6">
+  <article class="rounded bg-[#fff]">
     <NuxtLink
       active-class="text-primary"
       class="text-2xl font-bold transition hover:text-primary active:text-primary"
@@ -29,5 +29,5 @@ defineProps<{
     <div>
       {{ post.short_description }}
     </div>
-  </div>
+  </article>
 </template>

@@ -1,7 +1,7 @@
 import { reactive } from 'vue'
 import type { INavLinks, IGreeting, ISkills, IPost, IWork } from '@/mock/index.interface'
 
-export const navLinks = reactive([
+export const navLinks = reactive<INavLinks[]>([
   { name: 'Главная', link: '/' },
   { name: 'Работы', link: '/works' },
   { name: 'Блог', link: '/posts' },
@@ -19,7 +19,7 @@ const data: IData = {
   greeting: {
     title: 'Меня зовут Игорь, \nя - Frontend Vue.js разработчик',
     short_description:
-      'Привет, случайно или нет, но ты уже здесь и возможно читаешь эти строки. Да это очень простенький сайт, на котором размещена некоторая информация обо мне и моих проектах (с примерами кода).',
+      'Привет, этот простенький сайт расскажет немного обо мне и моих проектах. Если кратко, то я веб-разработчиков и в настоящее время ищу работу связанную с фронтендом на экосистеме Vue.js',
   },
   skills: {
     frontend:

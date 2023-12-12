@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex flex-col sm:flex-row">
+  <article class="flex flex-col sm:flex-row">
     <NuxtPicture
       v-if="work.images.files.length > 0"
       class="flex sm:shrink-0"
@@ -32,5 +32,5 @@ defineProps<{
         {{ work.short_description }}
       </div>
     </div>
-  </div>
+  </article>
 </template>

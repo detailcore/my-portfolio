@@ -3,8 +3,8 @@ import { greeting } from '../mock/index'
 </script>
 
 <template>
-  <div
-    class="flex min-h-[525px] flex-col items-center justify-between bg-[#fff] sm:flex-row-reverse"
+  <section
+    class="flex min-h-[405px] flex-col items-center justify-between bg-[#fff] sm:flex-row-reverse"
   >
     <div class="relative flex rounded-[50%] sm:h-60 sm:w-60">
       <NuxtImg
@@ -16,17 +16,15 @@ import { greeting } from '../mock/index'
     </div>
 
     <div class="mb-14 flex flex-col items-center text-center sm:mb-16 sm:block sm:text-left">
-      <div class="max-w-[506px] text-4xl font-bold sm:text-5xl">
-        {{ greeting.title }}
-      </div>
+      <div class="max-w-[506px] text-4xl font-bold sm:text-5xl">{{ greeting.title }}<Dot /></div>
       <div class="my-10 sm:mr-4">
         {{ greeting.short_description }}
       </div>
-      <button
+      <!-- <button
         class="flex h-12 w-52 items-center justify-center rounded-sm bg-primary text-xl font-medium text-gray-50 transition hover:opacity-80"
       >
         Открыть резюме
-      </button>
+      </button> -->
     </div>
-  </div>
+  </section>
 </template>
