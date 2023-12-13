@@ -8,20 +8,14 @@ export default defineNuxtConfig({
     enabled: false,
   },
 
-  // app: {
-  //   keepalive: true,
-  // },
-
   css: ['~/assets/styles/base.scss'], // global styles
 
   modules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    'nuxt-vitest',
     '@nuxt/image',
     'nuxt-purgecss',
     '@nuxtjs/google-fonts',
-    '@vueuse/nuxt',
   ],
 
   // https://image.nuxt.com/get-started/configuration
@@ -31,7 +25,7 @@ export default defineNuxtConfig({
   },
 
   purgecss: {
-    enabled: false, // Always enable purgecss
+    enabled: true, // Always enable purgecss
     // safelist: [''], // Add my-class token to the safelist (e.g. .my-class)
   },
 
