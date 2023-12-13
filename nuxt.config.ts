@@ -10,23 +10,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/styles/base.scss'], // global styles
 
-  modules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/image',
-    'nuxt-purgecss',
-    '@nuxtjs/google-fonts',
-  ],
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/google-fonts'],
 
   // https://image.nuxt.com/get-started/configuration
   image: {
     // quality: 70,
     format: ['webp'],
-  },
-
-  purgecss: {
-    enabled: true, // Always enable purgecss
-    // safelist: [''], // Add my-class token to the safelist (e.g. .my-class)
   },
 
   // https://google-fonts.nuxtjs.org/getting-started
