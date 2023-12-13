@@ -4,7 +4,7 @@ import { greeting } from '../mock/index'
 
 <template>
   <section
-    class="flex min-h-[405px] flex-col items-center justify-between bg-[#fff] sm:flex-row-reverse"
+    class="flex flex-col items-center justify-between bg-[#fff] sm:flex-row-reverse sm:items-start"
   >
     <div class="relative flex rounded-[50%] sm:h-60 sm:w-60">
       <NuxtImg

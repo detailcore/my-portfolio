@@ -29,8 +29,8 @@ const getName = (name: TKeys) => {
 </script>
 
 <template>
-  <div class="py-4">
-    <div class="text-xl font-medium">{{ getName(name) }}</div>
+  <div class="w-full py-6">
+    <div class="mb-2 text-xl font-medium">{{ getName(name) }}</div>
     <div class="opacity-80">{{ skill }}</div>
   </div>
 </template>

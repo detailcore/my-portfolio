@@ -15,7 +15,7 @@ const latest = computed(() => {
       </NuxtLink>
     </div>
     <div class="-mt-5 pb-6 text-center text-light sm:text-left">
-      Некторые заметки, планы и еще всякое
+      Некоторые заметки, планы и еще всякое
     </div>
 
     <div class="flex flex-col sm:flex-row">
