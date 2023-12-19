@@ -468,7 +468,10 @@ const data: IData = {
       },
       title: 'Клон Discord',
       subtitle: 'SPA, Tailwindcss, Учёба',
-      links: ['', ''],
+      links: [
+        'https://github.com/detailcore/vue3-tailwindcss-discord',
+        'https://discord.ermolaev.website',
+      ],
       stack: {
         backend: [],
         frontend: ['Vue 3', 'Vue Router', 'Pinia', 'Tailwindcss', 'TypeScript'],
