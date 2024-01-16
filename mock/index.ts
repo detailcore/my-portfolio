@@ -562,6 +562,31 @@ const data: IData = {
       short_description:
         'Задумка сайта-портфолио заключается в том, чтобы описать ближайшие планы в коротких постах и объединить некоторые мои работы на одном сайте (а также ссылки на гитхаб) и показывать работы как часть резюме.',
     },
+    {
+      id: 16,
+      date: '2024-01-15',
+      cover: 'cover.png',
+      images: {
+        folder: 'nuxt2-roll',
+        files: ['cover.png'],
+      },
+      title: 'Nuxt 2 Roll',
+      subtitle: 'SPA, Nuxt 2, Tailwindcss, Тестовое',
+      links: ['https://github.com/detailcore/nuxt2.roll', 'https://nuxt2-roll.ermolaev.website/'],
+      stack: {
+        backend: [],
+        frontend: ['Nuxt 2', 'Vuex', 'Tailwindcss'],
+        add: ['EsLint', 'Prettier'],
+      },
+      competencies: ['Вёрстка', 'Разработка'],
+      competencies_description: `
+          -- по заданию было указано строго использовать Nuxt 2
+          -- вёрстка по макету Figma с использованием Tailwindcss
+          -- настройка Nuxt и установка вспомогательных пакетов
+          -- деплой проекта и открытие репозиториев на гитхабе`,
+      short_description:
+        'Если этот проект рассматривать как тестовое задание, то крайне не рационально, особенно с учетом потраченного кол-ва времени, но макет показался интересным, поэтому и выполнил (но к дизайну макета много вопросов).',
+    },
   ],
 }
 
