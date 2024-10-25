@@ -617,6 +617,33 @@ const data: IData = {
       short_description:
         'Если этот проект рассматривать как тестовое задание, то крайне не рационально, особенно с учетом потраченного кол-ва времени, но макет показался интересным, поэтому и выполнил (но к дизайну макета много вопросов).',
     },
+    {
+      id: 17,
+      date: '2024-10-25',
+      cover: 'cover.png',
+      images: {
+        folder: 'jobs.sasflix',
+        files: ['cover.png'],
+      },
+      title: 'Jobs.Sasflix',
+      subtitle: 'Nuxt 3, TypeScript, Pinia, Тестовое',
+      links: ['https://github.com/detailcore/jobs.sasflix', 'https://sasflix.ermolaev.website/'],
+      stack: {
+        backend: [],
+        frontend: ['Nuxt 3', 'Pinia', 'TypeScript'],
+        add: ['Composition API', 'SSR'],
+      },
+      competencies: ['Вёрстка', 'Разработка'],
+      competencies_description: `
+          -- Приложения должно повторять макет в Фигме
+          -- выводить первые 5 постов из API на общей странице
+          -- быть написано без использования готовых библиотек компонентов
+          -- иметь кликабельные кнопки лайка и дизлайка
+          -- удалять комментарии, изменять значении и стили кнопок локально
+          -- использовать API dummyjson.com.`,
+      short_description:
+        'Друг скинул ссылку (jobs.sasflix.ru) в ТГ на вакансию и спросил, сделаешь? Ответил сделаю. Потому, что могу, потому, что было время!',
+    },
   ],
 }
 
