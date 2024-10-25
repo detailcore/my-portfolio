@@ -10,7 +10,24 @@ export default defineNuxtConfig({
 
   css: ['~/assets/styles/base.scss'], // global styles
 
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/google-fonts'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
+    // build: {
+    //   minify: 'esbuild',
+    //   cssCodeSplit: false,
+    // },
+    // esbuild: {
+    //   drop: ['console', 'debugger'], //* может удалять console и debugger даже в "dev" среде
+    // },
+  },
+
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/google-fonts', '@nuxt/eslint'],
 
   // https://image.nuxt.com/get-started/configuration
   image: {
@@ -24,5 +41,11 @@ export default defineNuxtConfig({
       Heebo: [400, 500, 700, 900],
     },
     display: 'swap',
+  },
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
   },
 })
